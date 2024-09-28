@@ -49,7 +49,7 @@ public class DailyBilling {
     }
 
     public static int countAboveMonthAverage(double[] dailyBilling){
-        double sum = 0,average = 0;
+        double sum = 0,average;
         for(double value : dailyBilling){
             sum += value;
         }
