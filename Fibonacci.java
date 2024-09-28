@@ -1,5 +1,3 @@
-import java.util.ArrayList;
-
 public class Fibonacci {
     public static boolean checkFibonacci(int n){
         int i = 0;
