@@ -50,10 +50,14 @@ public class DailyBilling {
 
     public static int countAboveMonthAverage(double[] dailyBilling){
         double sum = 0,average;
+        int days = 0;
         for(double value : dailyBilling){
-            sum += value;
+            if(value != 0) {
+                sum += value;
+                days++;
+            }
         }
-        average = sum / dailyBilling.length;
+        average = sum / days;
         int count = 0;
         for(double value : dailyBilling){
             if(value > average) count++;
